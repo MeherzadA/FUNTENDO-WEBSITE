@@ -309,12 +309,12 @@ function bringImgForward(currentImg) {
             </div>
         </div>`;
 
-    loadSelections(STAMPS, 'STAMPS');
+    loadSelections(STAMPS, 'Stamps');
 
     // Add event listeners for the buttons
-    document.querySelector('.stamps-btn').addEventListener('click', () => loadSelections(STAMPS, 'STAMPS'));
-    document.querySelector('.items-btn').addEventListener('click', () => loadSelections(ITEMS, 'ITEMS'));
-    document.querySelector('.characters-btn').addEventListener('click', () => loadSelections(CHARACTERS, 'CHARACTERS'));
+    document.querySelector('.stamps-btn').addEventListener('click', () => loadSelections(STAMPS, 'Stamps'));
+    document.querySelector('.items-btn').addEventListener('click', () => loadSelections(ITEMS, 'Items'));
+    document.querySelector('.characters-btn').addEventListener('click', () => loadSelections(CHARACTERS, 'Characters'));
 
     // Set the current image URL
     currentImgURL = currentImg.src;

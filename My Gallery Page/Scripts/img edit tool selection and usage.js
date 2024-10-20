@@ -67,7 +67,7 @@ function handleToolSelection(){
 
     canvas.defaultCursor = `url('Cursor Images/${toolImgID}'), auto`;
 
-    if(toolCategory === 'STAMPS' || toolCategory === 'ITEMS' || toolCategory === 'CHARACTERS'){
+    if(toolCategory === 'Stamps' || toolCategory === 'Items' || toolCategory === 'Characters'){
         setCurrentStamp(toolIndex, toolImgID, toolCategory)
     }
 
@@ -123,11 +123,11 @@ function handleStampTool(event){
     let toolList;
 
     console.log(currentStampIndex);
-    if(currentToolCategory === 'STAMPS'){
+    if(currentToolCategory === 'Stamps'){
         toolList = STAMPS;
-    }else if(currentToolCategory === 'ITEMS'){
+    }else if(currentToolCategory === 'Items'){
         toolList  = ITEMS;
-    }else if(currentToolCategory === 'CHARACTERS'){
+    }else if(currentToolCategory === 'Characters'){
         toolList  = CHARACTERS;
     }
     let defaultStampSize = toolList[currentStampIndex].size;
