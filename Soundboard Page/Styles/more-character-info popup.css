@@ -1,0 +1,115 @@
+.more-info-container{
+
+    color: black;
+    position: fixed;
+
+    top: 0;
+    right: 0;
+    left: 0;
+    
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    opacity: 0;
+    transition: opacity .5s ease, transform 1.3s;
+
+
+}
+
+.main-body{
+    margin-top: 100px;
+    margin-left: 20px;
+}
+
+.is-visible{
+    transform: translateY(450px);
+    opacity: 1;
+    z-index: 2;
+}
+
+.full-character-img{
+    max-width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    max-height: 40vh; /* Set a maximum height */
+    min-width: 300px;
+
+
+
+}
+
+.more-info-subcontainer{
+    display: flex;
+
+
+    position: absolute;
+    justify-content: space-around;
+
+    background-image: url("../Background Images/mario-more-info-wallpaper.png");
+
+    align-items: center;
+   
+}
+
+.character-info-container{
+    /* display: flex; */
+    padding: 25px;
+
+    width: 50%;
+    min-width: 500px;
+    height: 40%;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: red; */
+}
+
+.character-name{
+    font-family: 'SM64-font';
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.character-description{
+    font-family: 'WindWaker-character-description-font';
+    font-size: 30px;
+    margin-bottom: 30px;
+
+}
+
+.character-subheading{
+    font-style: italic;
+    font-family: 'Oracles-character-subheading-font';
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 28px;
+    color: rgba(0, 0, 0, 0.75);
+}
+
+.full-character-img-container{
+    margin-left: -50px;
+    display: flex;
+    align-items: baseline;
+}
+
+
+.next-btn, .back-btn{
+    display: flex;
+    background: none;
+    border: none;
+   
+
+    transform: scale(1); 
+    transition: transform 0.1s;
+}
+
+
+.arrow-btn-img{
+    width: 50px;
+    min-width: 200px;
+    cursor: pointer;
+}
+
+.next-btn:hover, .back-btn:hover{
+    transform: scale(1.1);
+}

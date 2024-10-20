@@ -1,0 +1,7 @@
+
+.background-container {
+    background-image: url('../Images/FULL FINAL BACKGROUND.png');
+    background-attachment: fixed;
+    z-index: -1;
+    background-size: cover; 
+}

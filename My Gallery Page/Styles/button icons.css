@@ -1,0 +1,12 @@
+.download-icon, .edit-pen-icon, .done-checkmark-icon{
+    color: black;
+    font-size: 22px;
+}
+
+.edit-pen-icon, .done-checkmark-icon{
+    margin-left: 15px;
+}
+
+.done-checkmark-icon{
+    font-size: 24.5px;
+}

@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'HylianFont'; 
+    src: url('../../Fonts/hylia-serif/Hylia\ Serif\ Beta\ v0-009/HyliaSerifBeta-Regular.otf'); 
+} 
+
+@font-face {
+    font-family: 'WindWaker-title-subheading-font'; 
+    src: url('../../Fonts/WindWaker/ReggaeOne-Regular.ttf'); 
+}
+
+@font-face {
+    font-family: 'SM64-font';
+    src: url('../../Fonts/SM64/TypefaceMario64-ywA93.otf');
+}
+
+@font-face {
+    font-family: 'WindWaker-character-description-font';
+    src: url('../../Fonts/WindWaker/RocknRollOne-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Oracles-character-subheading-font';
+    src: url('../../Fonts/Zelda Oracles/ZeldaOracles.ttf');
+}

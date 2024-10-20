@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "bootstrap-icons": "^1.10.5",
+    "fabric": "^5.4.0",
+    "fabricjs": "^1.0.0"
+  }
+}

@@ -1,0 +1,35 @@
+.browse-header{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    right: 0;
+    top: 76px;
+    height: 80px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.45);
+}
+
+.browse-item{
+    font-family: "HylianFont";
+    font-size: 45px;
+    padding-left: 25px;
+    padding-right: 25px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+    margin-right: 80px;
+    cursor: pointer;
+    transition: background-color 0.15s;
+}
+
+.browse-item:hover{
+    background-color: rgb(6, 132, 179);
+}
+
+.go-to-subpage{
+    text-decoration: none;
+    color: black;
+}

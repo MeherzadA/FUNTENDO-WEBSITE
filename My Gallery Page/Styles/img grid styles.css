@@ -1,0 +1,90 @@
+body {
+    margin-top: 100px;
+    padding-bottom: 3000px;
+    background-image: url("../../Soundboard Page/Background Images/soundboard bg.png");
+}
+
+
+.disable-scroll{
+    overflow: hidden;
+}
+
+.img-grid{
+    display: grid;
+    grid-template-columns:  repeat(5, 1fr); 
+    row-gap: 30px;
+    column-gap: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+}
+
+.img-item-container{
+    width: 300px;
+    height: 200px;
+} 
+
+.img-item-container-style, .add-img-label-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 300px;
+    height: 200px;
+
+    
+    position: relative;
+    border: 2.5px solid rgb(80, 78, 78);
+    overflow: hidden;
+
+    transition: scale 0.15s;
+    cursor: pointer;
+}
+
+
+.add-img-label-container{
+    flex-direction: column;
+    border-style: dashed;
+    background-color: none;
+    
+}
+
+.add-photo-icon{
+    width: 60px;
+}
+
+.add-img-label {
+    font-size: 18px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+
+.img-item-container-style.enable-hover:hover, .add-img-label-container:hover{
+    border-color: rgb(37, 122, 253);
+    scale: 1.07;
+}
+
+
+
+.img-item {
+    width: 100%;
+
+}
+
+.delete-img-btn{
+    font-size: 18px;
+    background: transparent;
+    border: none;
+    position: absolute;
+    right: 2px;
+    top: 4px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    color: rgba(0, 0, 0, 0.85)
+}
+
+.img-item-container:hover .delete-img-btn{
+    opacity: 1;
+    cursor: pointer;
+}

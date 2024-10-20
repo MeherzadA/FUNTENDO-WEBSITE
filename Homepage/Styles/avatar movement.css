@@ -1,0 +1,18 @@
+.my-avatar{
+    width: 200px; 
+    position: fixed; 
+    left: -2vh;
+    top: 60vh;
+    transition: opacity 0.5s, transform 0.5s; 
+}
+
+.into-pipe{
+    transform: translateY(250px);
+    opacity: 0;
+}
+
+.out-pipe{
+    transition: opacity 0.5s, transform 0.5s;
+    transform: translateY(0);
+    opacity: 1;
+}

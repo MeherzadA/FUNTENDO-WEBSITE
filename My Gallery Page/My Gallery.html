@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Gallery</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <link rel = "stylesheet" href = "../banner.css">
+        <link rel = "stylesheet" href = "Styles/img grid styles.css">
+        <link rel = "stylesheet" href = "Styles/img popup onclick.css">
+        <link rel = "stylesheet" href = "Styles/img editing tools.css">
+        <link rel = "stylesheet" href = "Styles/canvas.css">
+        <link rel = "stylesheet" href = "Styles/done editing.css">
+        <link rel = "stylesheet" href = "Styles/canvas download.css">
+        <link rel = "stylesheet" href = "Styles/button icons.css">
+        <link rel = "stylesheet" href = "Styles/helper styles.css">
+        <link rel = "stylesheet" href = "Styles/general.css">
+        <link rel = "stylesheet" href = "../Fonts/fonts.css">
+    </head>
+
+    <body>
+        <div class = "banner">
+            <a href="../index.html"><img class = "logo" src = "../Homepage/Images/Funtendo logo.png"></a>
+            
+        </div>
+
+        <div class = "heading-container">
+            <h1 class = "main-heading">The Gallery!</h1>
+            <p class = "main-subheading">Upload your own photos and use the editor to <span style = "color: rgb(255, 0, 255); font-size: 30px;">FUNTENDOIFY</span> your images! </p>
+            <p class = "main-subheading">Your images will automatically be saved here, and you can edit or download them at any time!</p> 
+        </div>
+
+        <div class = "popup-container">
+        
+
+                <div class = "popup-content">
+                </div>
+
+                <div style = "position: absolute; top: 0; right: 0;">
+                    <div style = "position: absolute; right: 0px;">
+                        <button class = "download-img-btn"><a id = "canvasDownload" href = "#" download = "my image.png">Download Image</a><i class="fa-solid fa-download download-icon"></i></button>
+                        <button class = "edit-btn"></button>
+                    </div>
+
+                    <div class = "done-editing-container">
+                        <label class = "gallery-save-checkbox-label">
+                            <input id = "gallery-save-checkbox" type = "checkbox">Save Edit to Gallery?
+                            
+                        </label>
+                        <label class = "img-download-checkbox-label">
+                            <input id = "img-download-checkbox" type = "checkbox">Download?
+                        </label>
+                        <div class = "done-editing-btns">
+                            <button id = "cancel-done-btn">Cancel</button>
+                            <button id = "confirm-keep-editing-btn" >Confirm and continue Editing</button>
+                            <button id = "confirm-goto-gallery-btn">Confirm and go to Gallery</button>
+                        </div>
+                    
+                    </div>
+                </div>
+
+                <div style = "position: absolute; top: 0; left: 0;">
+                    <button class = "back-to-gallery-btn">Back to Gallery</button>
+
+                </div>
+        </div>
+
+        <div>
+            <input type="file" id="file-input" accept="image/jpeg, image/png, image/jpg" style="margin-top: 100px; display: none;"> 
+
+
+        
+            <div class="img-grid">
+                <div></div>
+            </div>
+        
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/fabric@6.4.3/dist/index.js"></script>
+
+        <script src = "Scripts/done editing.js"></script>
+        <script src = "Scripts/global variables.js"></script>
+        <script src = "Scripts/img editing image list.js"></script>
+        <script src = "Scripts/img edit tool selection and usage.js"></script>
+        <script src = "Scripts/enter edit mode.js"></script>
+        <script src = "Scripts/img gallery.js"></script>
+        <script src = "Scripts/download image.js"></script>
+        <script src = "Scripts/download image event listener.js"></script>
+    
+    </body>
+</html>

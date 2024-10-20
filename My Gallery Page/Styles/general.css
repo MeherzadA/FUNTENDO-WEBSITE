@@ -1,0 +1,20 @@
+.heading-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    margin-top: -15x;
+}
+
+.main-heading{
+    font-family: "HylianFont";
+    font-size: 50px;
+    margin-bottom: -5px;
+}
+
+.main-subheading{
+    font-family: 'WindWaker-title-subheading-font';
+    font-size: 21px;
+    margin-bottom: -5px;
+}
